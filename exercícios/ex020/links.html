@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        . class
+        # id
+        : pseudoclass
+        ::pseudoitem
+        > children
+
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkgreen;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: ' [link]';
+            color: lightgray;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.google.com/search?q=brasil&rlz=1C1MIZP_pt-BRBR1164BR1164&oq=brasil&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyCggCEC4YsQMYgAQyCggDEC4YsQMYgAQyDQgEEAAYgwEYsQMYgAQyEAgFEC4YxwEYsQMY0QMYgAQyCggGEAAYsQMYgAQyCggHEAAYsQMYgAQyCggIEC4YsQMYgAQyCggJEAAYsQMYgATSAQgxMzI4ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&sei=0g7TaKbaJt3Z1sQP-8TYiA4" target="_blank">Brasil</a></li>
+        <li><a href="https://www.google.com/search?q=canada&sca_esv=d43255849d412494&rlz=1C1MIZP_pt-BRBR1164BR1164&ei=5w7TaMONE67a1sQP0KvUqQU&ved=0ahUKEwiDnaTx5--PAxUurZUCHdAVNVUQ4dUDCBA&uact=5&oq=canada&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmNhbmFkYTIKEC4YgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTINEC4YgAQYsQMYQxiKBTIKEC4YgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIIEAAYgAQYsQMyDRAAGIAEGLEDGEMYigUyEBAAGIAEGLEDGEMYgwEYigVIm1FQ4gpYxE9wBXgBkAEAmAGqAaABqgGqAQMwLjG4AQPIAQD4AQGYAgagAtwBqAIKwgIQEAAYAxi0AhjqAhiPAdgBAcICEBAuGAMYtAIY6gIYjwHYAQGYAw_xBTPxobADvsLHugYECAEYCpIHAzUuMaAH3guyBwMwLjG4B7EBwgcFMi00LjLIBys&sclient=gws-wiz-serp">Canadá</a></li>
+        <li><a href="https://www.google.com/search?q=jap%C3%A3o&sca_esv=d43255849d412494&rlz=1C1MIZP_pt-BRBR1164BR1164&ei=Ew_TaPe4Nqio1sQPl9yx4AI&ved=0ahUKEwi3jsWG6O-PAxUolJUCHRduDCwQ4dUDCBA&uact=5&oq=jap%C3%A3o&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmphcMOjbzIFEAAYgAQyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMgUQABiABDILEAAYgAQYsQMYgwEyDhAuGIAEGLEDGIMBGIoFMgsQABiABBixAxiDATILEAAYgAQYsQMYgwFImhdQqwdY_RNwAXgBkAEAmAGmAaABpgGqAQMwLjG4AQPIAQD4AQGYAgKgArsBqAIKwgITEC4YgAQYQxi0AhiKBRjqAtgBAcICExAAGIAEGEMYtAIYigUY6gLYAQGYAwvxBRqXqq5mrXK3ugYECAEYB5IHAzEuMaAHwAuyBwMwLjG4B7ABwgcDMy0yyAcS&sclient=gws-wiz-serp">Japão</a></li>
+    </ul>
+</body>
+</html>
