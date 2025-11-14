@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        caption {
+            font-weight: bolder;
+            font-size: 1.3em;
+            padding: 5px;
+        }
+
+        col:nth-child(even){
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Guilherme</td>
+            <td>16</td>
+            <td>M</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Duda</td>
+            <td>15</td>
+            <td>F</td>
+            <td>Psicóloga</td>
+        </tr>
+        <tr>
+            <td>Júlia</td>
+            <td>15</td>
+            <td>F</td>
+            <td>Delegada</td>
+        </tr>
+        <tr>
+            <td>Ágata</td>
+            <td>16</td>
+            <td>F</td>
+            <td>Empresária</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>15</td>
+            <td>M</td>
+            <td>Game Design</td>
+        </tr>
+        <tr>
+            <td>Alberto</td>
+            <td>16</td>
+            <td>M</td>
+            <td>Desenvolvedor </td>
+        </tr>
+    </table>
+</body>
+</html>
