@@ -7,18 +7,34 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-]
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" required maxlength="20" autocomplete="name" placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="imed">Média: </label>
+                <input type="number" name="med" id="imed" min="0" max="10" placeholder="0 a 10" step="0.1" required >
+            </p>
+            <p>
+                <label for="imon">Período Letivo: </label>
+                <input type="month" name="mon" id="imon" value="2026-03">
+            </p>
+            <p>
+                <label for="idate">Dia da prova: </label>
+                <input type="date" name="date" id="idade" value="2026-03-25">
+                <!--Se faz o value por JS-->
+            </p>
+            <p>
+                <label for="ihora">Hora da prova: </label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
 
-
-
-<label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="20" autocomplete="name" placeholder="Nome completo">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-
-    </form>
+    
 </body>
 </html>
